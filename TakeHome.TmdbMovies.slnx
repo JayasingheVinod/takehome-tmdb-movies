@@ -1,8 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/TakeHome.TmdbMovies.Api/TakeHome.TmdbMovies.Api.csproj" />
-    <Project Path="src/TakeHome.TmdbMovies.Application/TakeHome.TmdbMovies.Application.csproj" />
-    <Project Path="src/TakeHome.TmdbMovies.Domain/TakeHome.TmdbMovies.Domain.csproj" />
-    <Project Path="src/TakeHome.TmdbMovies.Infrastructure/TakeHome.TmdbMovies.Infrastructure.csproj" />
-  </Folder>
-</Solution>
