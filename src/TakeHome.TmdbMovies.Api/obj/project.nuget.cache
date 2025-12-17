@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "6ze/g3NnAz4=",
+  "success": true,
+  "projectFilePath": "/Users/vinodjayasinghe/Interview/takehome-tmdb-movies/src/TakeHome.TmdbMovies.Api/TakeHome.TmdbMovies.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/vinodjayasinghe/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/Users/vinodjayasinghe/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

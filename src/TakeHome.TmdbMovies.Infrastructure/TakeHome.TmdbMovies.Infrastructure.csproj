@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TakeHome.TmdbMovies.Application\TakeHome.TmdbMovies.Application.csproj" />
+    <ProjectReference Include="..\TakeHome.TmdbMovies.Domain\TakeHome.TmdbMovies.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
