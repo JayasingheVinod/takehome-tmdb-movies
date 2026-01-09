@@ -6,6 +6,7 @@ COPY src/TakeHome.TmdbMovies.Api/TakeHome.TmdbMovies.Api.csproj src/TakeHome.Tmd
 COPY src/TakeHome.TmdbMovies.Application/TakeHome.TmdbMovies.Application.csproj src/TakeHome.TmdbMovies.Application/
 COPY src/TakeHome.TmdbMovies.Domain/TakeHome.TmdbMovies.Domain.csproj src/TakeHome.TmdbMovies.Domain/
 COPY src/TakeHome.TmdbMovies.Infrastructure/TakeHome.TmdbMovies.Infrastructure.csproj src/TakeHome.TmdbMovies.Infrastructure/
+COPY tests/TakeHome.TmdbMovies.Application.Tests/TakeHome.TmdbMovies.Application.Tests.csproj tests/TakeHome.TmdbMovies.Application.Tests/
 
 RUN dotnet restore
 

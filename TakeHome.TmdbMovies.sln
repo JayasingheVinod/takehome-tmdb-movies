@@ -4,6 +4,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{51051430-FC4C-4792-80F6-F6A90FBA450A}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.TmdbMovies.Api", "src\TakeHome.TmdbMovies.Api\TakeHome.TmdbMovies.Api.csproj", "{2BBA75C5-8BC2-464C-B7AE-9CDA1EC04156}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.TmdbMovies.Application", "src\TakeHome.TmdbMovies.Application\TakeHome.TmdbMovies.Application.csproj", "{D44E5C22-2EBD-4308-8956-3337EFD85074}"
@@ -11,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.TmdbMovies.Domain", "src\TakeHome.TmdbMovies.Domain\TakeHome.TmdbMovies.Domain.csproj", "{7CC9D59B-8FF9-4A6B-A858-D4CACAD81FFC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.TmdbMovies.Infrastructure", "src\TakeHome.TmdbMovies.Infrastructure\TakeHome.TmdbMovies.Infrastructure.csproj", "{277068D2-5DCF-436A-8631-AD448B4D0495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHome.TmdbMovies.Application.Tests", "tests\TakeHome.TmdbMovies.Application.Tests\TakeHome.TmdbMovies.Application.Tests.csproj", "{C35D8344-F446-4434-859D-CB80151ADA94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +74,18 @@ Global
 		{277068D2-5DCF-436A-8631-AD448B4D0495}.Release|x64.Build.0 = Release|Any CPU
 		{277068D2-5DCF-436A-8631-AD448B4D0495}.Release|x86.ActiveCfg = Release|Any CPU
 		{277068D2-5DCF-436A-8631-AD448B4D0495}.Release|x86.Build.0 = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|x64.Build.0 = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Debug|x86.Build.0 = Debug|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|x64.ActiveCfg = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|x64.Build.0 = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|x86.ActiveCfg = Release|Any CPU
+		{C35D8344-F446-4434-859D-CB80151ADA94}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +95,6 @@ Global
 		{D44E5C22-2EBD-4308-8956-3337EFD85074} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{7CC9D59B-8FF9-4A6B-A858-D4CACAD81FFC} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{277068D2-5DCF-436A-8631-AD448B4D0495} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{C35D8344-F446-4434-859D-CB80151ADA94} = {51051430-FC4C-4792-80F6-F6A90FBA450A}
 	EndGlobalSection
 EndGlobal

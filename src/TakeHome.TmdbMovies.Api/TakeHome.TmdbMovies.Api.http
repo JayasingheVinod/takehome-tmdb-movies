@@ -1,6 +1,14 @@
-@TakeHome.TmdbMovies.Api_HostAddress = http://localhost:5213
+@host = http://localhost:5213
 
-GET {{TakeHome.TmdbMovies.Api_HostAddress}}/weatherforecast/
+GET {{host}}/api/movies?limit=5
 Accept: application/json
 
 ###
+
+GET {{host}}/api/movies/550
+Accept: application/json
+
+###
+
+GET {{host}}/health
+Accept: application/json
