@@ -1,0 +1,41 @@
+services:
+  takehome-sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: takehome-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "${SA_PASSWORD}"
+    ports:
+      - "1433:1433"
+    volumes:
+      - takehome_sql_data:/var/opt/mssql
+    healthcheck:
+      # Use $$ so the password is read INSIDE the container (prevents compose/shell parsing issues)
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$SA_PASSWORD\" -Q \"SELECT 1\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  takehome-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: takehome-api
+    environment:
+      ASPNETCORE_URLS: "http://+:8080"
+      ASPNETCORE_ENVIRONMENT: "Development"
+
+      # IMPORTANT: must be SqlServer because your code calls GetConnectionString("SqlServer")
+      ConnectionStrings__SqlServer: "Server=takehome-sql,1433;Database=TakeHomeTmdbDb;User Id=sa;Password=${SA_PASSWORD};Encrypt=True;TrustServerCertificate=True;"
+
+      ExternalApis__Tmdb__ApiKey: "${ExternalApis__Tmdb__ApiKey}"
+      ExternalApis__Tmdb__BaseUrl: "https://api.themoviedb.org/3/"
+    ports:
+      - "8080:8080"
+    depends_on:
+      takehome-sql:
+        condition: service_healthy
+
+volumes:
+  takehome_sql_data:

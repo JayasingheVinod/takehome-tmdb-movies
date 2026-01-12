@@ -1,0 +1,14 @@
+@host = http://localhost:5213
+
+GET {{host}}/api/movies?limit=5
+Accept: application/json
+
+###
+
+GET {{host}}/api/movies/550
+Accept: application/json
+
+###
+
+GET {{host}}/health
+Accept: application/json
